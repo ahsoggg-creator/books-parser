@@ -79,7 +79,7 @@ def save_excel(books, filename):
         ws = writer.sheets["Книги"]
         ws.auto_filter.ref = ws.dimensions
         ws.freeze_panes = "A2"
-        widths = {"A": 60, "B": 10, "C": 10, "D": 10, "E": 70}
+        widths = {"A": 60, "B": 11, "C": 12, "D": 12, "E": 70}
         for col, width in widths.items():
             ws.column_dimensions[col].width = width
     return len(df)
